@@ -7,6 +7,137 @@
   --Brown-800: hsl(14, 45%, 36%);
   --Rose-800: hsl(332, 51%, 32%);
   --Rose-50: hsl(330, 100%, 98%);
+  --border-10: 10px;
+  --mb: 30px;
 }
 /* Global Variable  */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  background-color: var(--Stone-100);
+}
+
+.container {
+  width: 740px;
+  background-color: white;
+  border-radius: var(--border-10);
+  margin: 100px auto;
+  padding: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 767px) {
+  .container {
+    width: 100%;
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container .inside-container {
+    padding: 30px;
+  }
+}
+
+.container img {
+  width: 100%;
+  border-radius: var(--border-10);
+  margin-bottom: var(--mb);
+}
+
+@media (max-width: 767px) {
+  .container img {
+    border-radius: 0;
+    margin-bottom: 0;
+  }
+}
+
+.container h1 {
+  font-family: "Young Serif", serif;
+}
+
+.container p {
+  font-size: 14px;
+  margin-bottom: var(--mb);
+}
+
+.container .time {
+  background-color: var(--Rose-50);
+  padding: 20px;
+  border-radius: var(--border-10);
+  margin-bottom: var(--mb);
+}
+
+.container h3 {
+  color: var(--Rose-800);
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.container ul {
+  margin-left: 20px;
+}
+
+.container ul li {
+  padding: 10px;
+}
+
+.container ul li span {
+  font-weight: bold;
+}
+
+.container h2 {
+  color: var(--Brown-800);
+  font-size: 30px;
+  margin-bottom: var(--mb);
+  font-family: "Young Serif", sans-serif;
+  font-weight: normal;
+}
+
+.container .inside-container > hr {
+  margin: 30px 0;
+}
+
+.container ol {
+  margin-left: 20px;
+}
+
+.container ol li {
+  padding: 10px;
+}
+
+.container ol li::marker {
+  color: var(--Brown-800);
+  font-weight: 800;
+}
+
+.container ol li span {
+  font-weight: bold;
+}
+
+.container .nutrition .description-container .descripe-box {
+  display: flex;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.container .nutrition .description-container .descripe-box:last-child {
+  border-bottom: none;
+}
+
+.container .nutrition .description-container .descripe-box div {
+  flex: 1;
+}
+
+.container .nutrition .description-container .descripe-box div:last-of-type {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
