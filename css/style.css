@@ -60,11 +60,14 @@ body {
 
 .container h1 {
   font-family: "Young Serif", serif;
+  font-weight: normal;
+  letter-spacing: 1px;
 }
 
 .container p {
   font-size: 14px;
   margin-bottom: var(--mb);
+  line-height: 1.6;
 }
 
 .container .time {
@@ -110,6 +113,7 @@ body {
 
 .container ol li {
   padding: 10px;
+  line-height: 1.6;
 }
 
 .container ol li::marker {
