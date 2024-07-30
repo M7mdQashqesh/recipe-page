@@ -33,6 +33,10 @@ body {
 }
 
 @media (max-width: 767px) {
+  body {
+    background-color: white;
+  }
+
   .container {
     width: 100%;
     border-radius: 0;
